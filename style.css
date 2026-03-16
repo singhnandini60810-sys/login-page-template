@@ -1,45 +1,85 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
 body{
-font-family: Arial, sans-serif;
-background: linear-gradient(135deg,#6a11cb,#2575fc);
 height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-margin:0;
+background:linear-gradient(135deg,#667eea,#764ba2);
 }
 
-.login-container{
-background:white;
-padding:30px;
+.container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.login-box{
+width:320px;
+padding:40px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(10px);
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-text-align:center;
-width:300px;
+box-shadow:0 0 20px rgba(0,0,0,0.2);
+color:white;
 }
 
-input{
+.login-box h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.input-box{
+position:relative;
+margin-bottom:30px;
+}
+
+.input-box input{
 width:100%;
 padding:10px;
-margin:10px 0;
-border-radius:5px;
-border:1px solid #ccc;
+background:transparent;
+border:none;
+border-bottom:2px solid white;
+outline:none;
+color:white;
+}
+
+.input-box label{
+position:absolute;
+top:50%;
+left:0;
+transform:translateY(-50%);
+pointer-events:none;
+transition:0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label{
+top:-10px;
+font-size:12px;
 }
 
 button{
 width:100%;
 padding:10px;
-background:#2575fc;
-color:white;
+background:white;
+color:#333;
 border:none;
 border-radius:5px;
 cursor:pointer;
+font-weight:bold;
 }
 
 button:hover{
-background:#1b5ed7;
+background:#ddd;
 }
 
 #message{
-margin-top:10px;
-color:red;
+text-align:center;
+margin-top:15px;
 }
