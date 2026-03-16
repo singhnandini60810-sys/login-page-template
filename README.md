@@ -1,22 +1,18 @@
-# login-page-template
-# Login Page Template
+# Modern Login Page
 
-A simple login page built using HTML, CSS and JavaScript.
+A beautiful modern login page built with HTML, CSS and JavaScript using glassmorphism design.
 
 ## Features
-- Responsive login form
-- Basic validation
-- Clean UI design
+- Glassmorphism UI
+- Smooth input animations
+- Login validation with JavaScript
+- Clean and responsive design
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-
-## How to Use
-1. Clone the repository
-2. Open index.html in a browser
-3. Login using:
-
+## Demo Credentials
 Username: admin  
 Password: 1234
+
+## Technologies Used
+HTML  
+CSS  
+JavaScript
